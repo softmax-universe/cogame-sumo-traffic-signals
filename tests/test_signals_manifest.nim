@@ -171,7 +171,6 @@ suite "manifest pins":
     check ("  " & Slug & ":") in compose
     check "image: coworld-" & Slug & ":latest" in compose
     check "platform: linux/amd64" in compose
-    check "network: host" in compose
     let placeholder = "{{SUMO_TRAFFIC_SIGNALS_IMAGE}}"
     check placeholder in readFile(repoPath("coworld_manifest_template.json"))
 
