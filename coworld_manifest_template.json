@@ -10,17 +10,17 @@
     "protocols": {
       "player": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-sumo-traffic-signals/blob/main/docs/PROTOCOL.md"
+        "value": "https://github.com/softmax-universe/cogame-sumo-traffic-signals/blob/main/docs/PROTOCOL.md"
       },
       "global": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-sumo-traffic-signals/blob/main/docs/PROTOCOL.md"
+        "value": "https://github.com/softmax-universe/cogame-sumo-traffic-signals/blob/main/docs/PROTOCOL.md"
       }
     },
     "docs": {
       "readme": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-sumo-traffic-signals/blob/main/README.md"
+        "value": "https://github.com/softmax-universe/cogame-sumo-traffic-signals/blob/main/README.md"
       },
       "pages": [
         {
@@ -28,7 +28,7 @@
           "title": "Rules",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-sumo-traffic-signals/blob/main/docs/RULES.md"
+            "value": "https://github.com/softmax-universe/cogame-sumo-traffic-signals/blob/main/docs/RULES.md"
           }
         },
         {
@@ -36,7 +36,7 @@
           "title": "Controlling the signals",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-sumo-traffic-signals/blob/main/docs/SIGNALS.md"
+            "value": "https://github.com/softmax-universe/cogame-sumo-traffic-signals/blob/main/docs/SIGNALS.md"
           }
         },
         {
@@ -44,7 +44,7 @@
           "title": "What this is and is not a port of",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-sumo-traffic-signals/blob/main/docs/PORTING-SUMO-RL.md"
+            "value": "https://github.com/softmax-universe/cogame-sumo-traffic-signals/blob/main/docs/PORTING-SUMO-RL.md"
           }
         }
       ]
@@ -176,7 +176,7 @@
       "description": "The standard longest-queue actuated controller: every turn it serves whichever phase has the longest movable queue, and it never looks at whether the block it is discharging into has room. Local greed, shipped as the thing to beat.",
       "image": "{{SUMO_TRAFFIC_SIGNALS_IMAGE}}",
       "run": ["/bin/sumo-traffic-signals-player"],
-      "source_url": "https://github.com/Metta-AI/cogame-sumo-traffic-signals",
+      "source_url": "https://github.com/softmax-universe/cogame-sumo-traffic-signals",
       "env": {"PLAYER_SCRIPTED": "greedy", "PLAYER_POLICY_LABEL": "greedy"},
       "resources": {
         "requests": {"cpu": "100m", "memory": "64Mi"},
@@ -190,7 +190,7 @@
       "description": "The classic fixed-time plan: one phase per turn from NSG, EWG, NSL, EWL, identical at all four of its intersections and therefore with zero offset between them. No sensing, no coordination — what a city looks like before anybody tunes it.",
       "image": "{{SUMO_TRAFFIC_SIGNALS_IMAGE}}",
       "run": ["/bin/sumo-traffic-signals-player"],
-      "source_url": "https://github.com/Metta-AI/cogame-sumo-traffic-signals",
+      "source_url": "https://github.com/softmax-universe/cogame-sumo-traffic-signals",
       "env": {"PLAYER_SCRIPTED": "fixedcycle", "PLAYER_POLICY_LABEL": "fixedcycle"},
       "resources": {
         "requests": {"cpu": "100m", "memory": "64Mi"},
